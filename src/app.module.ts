@@ -1,3 +1,4 @@
+import { TemaModule } from './tema/tema.module';
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
@@ -15,9 +16,11 @@ import { PostagemModule } from './postagem/postagem.modules';
       password: 'root', //senha da db
       database: 'db_blogpessoal', //nome da database
       entities: [Postagem],
+      autoLoadEntities: true,
       synchronize: true,
     }),
-      PostagemModule, 
+      PostagemModule,
+      TemaModule
   ],
   controllers: [AppController],
   providers: [AppService],
