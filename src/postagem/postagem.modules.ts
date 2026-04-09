@@ -12,3 +12,4 @@ import { TemaModule } from "../tema/tema.module";
     exports: [TypeOrmModule] // Exporta o TypeOrmModule
 })
 export class PostagemModule {}
+//Colocar a exportação no app.module (module principal)

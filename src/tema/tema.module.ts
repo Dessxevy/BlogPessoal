@@ -10,4 +10,5 @@ import { TemaService } from "./services/tema.service";
     controllers: [TemaController],
     exports: [TemaService]
 })
-export class TemaModule {}
+export class TemaModule {} 
+//Colocar a exportação no app.module (module principal)
